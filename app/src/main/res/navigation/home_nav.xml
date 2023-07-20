@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/landingFragment">
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="com.aasan.sample.landing.LandingFragment"
+        android:label="LandingFragment" >
+        <action
+            android:id="@+id/action_landingFragment_to_descriptionPage"
+            app:destination="@id/descriptionPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/descriptionPage"
+        android:name="com.aasan.sample.descriptionPage.DescriptionPage"
+        android:label="DescriptionPage" />
+    <fragment
+        android:id="@+id/profilePageFragment"
+        android:name="com.aasan.sample.profile.ProfilePageFragment"
+        android:label="ProfilePageFragment" >
+        <action
+            android:id="@+id/action_profilePageFragment_to_profileDetailPage"
+            app:destination="@id/profileDetailPage" />
+        <action
+            android:id="@+id/action_profilePageFragment_to_leaderRly"
+            app:destination="@id/leaderRly" />
+        <action
+            android:id="@+id/action_profilePageFragment_to_cameraViewFragment"
+            app:destination="@id/cameraViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileDetailPage"
+        android:name="com.aasan.sample.profiledetail.ProfileDetailPage"
+        android:label="ProfileDetailPage" />
+    <fragment
+        android:id="@+id/leaderRly"
+        android:name="com.aasan.sample.leaderly.LeaderRly"
+        android:label="LeaderRly" />
+    <fragment
+        android:id="@+id/cameraViewFragment"
+        android:name="com.aasan.sample.categories.CameraViewFragment"
+        android:label="CameraViewFragment" />
+</navigation>
